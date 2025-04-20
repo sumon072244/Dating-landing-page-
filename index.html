@@ -3,105 +3,67 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Find Your Match Instantly</title>
+  <title>Hot Singles Near You</title>
   <style>
     body {
-      background: linear-gradient(to bottom, #fce4ec, #f8bbd0);
-      font-family: 'Segoe UI', sans-serif;
       margin: 0;
-      padding: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(#ffb6c1, #fff);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       text-align: center;
-      color: #333;
+      padding: 20px;
     }
     .container {
+      max-width: 400px;
+      background: #fff;
       padding: 20px;
-      max-width: 600px;
-      margin: 0 auto;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     }
     h1 {
-      font-size: 2em;
-      margin-bottom: 10px;
+      color: #e60073;
+      font-size: 24px;
+    }
+    p {
+      font-size: 16px;
+      margin: 10px 0 20px;
+    }
+    img {
+      width: 100%;
+      border-radius: 10px;
     }
     .cta-button {
-      display: inline-block;
-      background: #e91e63;
-      color: #fff;
-      font-size: 1.3em;
-      padding: 15px 30px;
-      margin-top: 20px;
+      background: #e60073;
+      color: white;
+      padding: 15px 25px;
       border: none;
-      border-radius: 50px;
+      border-radius: 10px;
+      font-size: 18px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+      margin-top: 20px;
       text-decoration: none;
-      animation: pulse 1.5s infinite;
+      display: inline-block;
     }
-    @keyframes pulse {
-      0% { transform: scale(1); }
-      50% { transform: scale(1.05); }
-      100% { transform: scale(1); }
+    .cta-button:hover {
+      background: #cc005f;
     }
-    .chat-box {
-      background-color: #fff;
-      border-radius: 10px;
-      padding: 15px;
-      margin: 20px 0;
-      text-align: left;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-    .chat-bubble {
-      background: #fce4ec;
-      padding: 10px;
-      margin: 5px 0;
-      border-radius: 10px;
-    }
-    .timer {
-      font-size: 1.2em;
-      font-weight: bold;
-      color: #d32f2f;
-    }
-    footer {
-      margin-top: 40px;
-      font-size: 0.8em;
-      color: #666;
+    .stats {
+      margin-top: 15px;
+      font-size: 14px;
+      color: #555;
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>Ready to Meet Someone New?</h1>
-    <p>Thousands are getting matched now. Why not you?</p>
-
-    <div class="chat-box">
-      <div class="chat-bubble"><strong>Jessica, 25:</strong> Hey, you seem cute 👀</div>
-      <div class="chat-bubble"><strong>Emily, 22:</strong> Just matched! Let’s talk 🥰</div>
-      <div class="chat-bubble"><strong>Rachel, 28:</strong> Can’t wait to meet up ❤️</div>
-    </div>
-
-    <p class="timer">⏰ Hurry! Offer expires in <span id="countdown">05:00</span></p>
-
-    <a href="https://www.profitableratecpm.com/dn3av9jhj0?key=780713d0aac6551ee07cc3d69c0baad5" class="cta-button">
-      💘 Get Started Now
-    </a>
-
-    <footer>
-      Not affiliated with any major dating platform. Entertainment use only.
-    </footer>
+    <h1>Hot Singles Near You Want to Chat 💬</h1>
+    <p>No signup. Just click, browse & start chatting now!</p>
+    <img src="https://i.imgur.com/FvKzF4J.jpg" alt="Dating Image" />
+    <a href="https://www.profitableratecpm.com/v432r3myj2?key=b9dbfe6f7e4f65c1246203b5b49460bd" class="cta-button">Find Your Match</a>
+    <p class="stats">2,173 new users joined today!</p>
   </div>
-
-  <script>
-    // Countdown Timer
-    let time = 300; // 5 minutes
-    const countdownEl = document.getElementById("countdown");
-    const timer = setInterval(() => {
-      const minutes = Math.floor(time / 60);
-      const seconds = time % 60;
-      countdownEl.textContent = `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
-      time--;
-      if (time < 0) {
-        clearInterval(timer);
-        countdownEl.textContent = "00:00";
-      }
-    }, 1000);
-  </script>
 </body>
 </html>
-
